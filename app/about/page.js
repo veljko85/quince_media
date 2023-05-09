@@ -1,9 +1,9 @@
 import styles from './page.module.css'
 
-export default function Home() {
+export default function About() {
   return (
     <main className={styles.main}>
-      <h1>Home Quince Media</h1>
+      <h1>About Qunce Media</h1>
     </main>
   )
 }
