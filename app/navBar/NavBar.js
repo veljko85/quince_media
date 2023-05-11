@@ -11,7 +11,6 @@ const NavBar = () => {
       setActive(true);
     } else {
       setActive(false);
-      console.log('aaa')
     }
   }
   
