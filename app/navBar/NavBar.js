@@ -4,30 +4,28 @@ import Link from 'next/link'
 import styles from './navBar.module.css'
 
 const NavBar = () => {
+  
   const [active, setActive] = useState(true);
-
-  const handleMouseOver = () => {
-    setActive(true);
-  };
-
-  const handleMouseOut = () => {
+  const navBarToggleVisibility = () => {
     if(!active){
       setActive(true);
-      console.log(active, 'true')
     } else {
       setActive(false);
-      console.log(active, 'false')
     }
-  };
-  const hideNavBar = () => {
-    console.log(navBarContainer[0])
   }
+  
   return (
-    <div onClick={handleMouseOut} className={active ? `${styles.navBarContainerShow}` : `${styles.navBarContainerHide}`}>
-      <Link href="/">Home</Link>
-      <Link href="/about">About Us</Link>
+    <div className={styles.navBarContainer}>
+      <div className={active ? `${styles.navBarShow}` : `${styles.navBarHide}`}>
+        <Link href="/">Home</Link>
+        <Link href="/about">About Us</Link>
+      </div>
+      <div onClick={navBarToggleVisibility}
+      className={styles.hamBtn}
+      ></div>
     </div>
   )
+
 }
 
 export default NavBar
