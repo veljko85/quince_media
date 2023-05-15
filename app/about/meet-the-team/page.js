@@ -37,30 +37,39 @@ export default function MeetTheTeam() {
       let employeeDiv = document.createElement('div');
       employeeDiv.classList.add(`${styles.employeeDiv}`)
 
+      
       let employeeImgDiv = document.createElement('div');
       employeeImgDiv.classList.add(`${styles.employeeImgDiv}`)
-      employeeImgDiv.style.backgroundImage = meetTheTeam.employees.image;
+      employeeImgDiv.style.backgroundImage = meetTheTeam.employees[i].image;
       employeeDiv.appendChild(employeeImgDiv);
-      
+        
       let employeeDataDiv = document.createElement('div');
       employeeDataDiv.classList.add(`${styles.employeeDataDiv}`)
       employeeDiv.appendChild(employeeDataDiv);
+      console.log(employeeDiv)
 
       let employeeName = document.createElement('H3')
-      employeeName.innerHTML = meetTheTeam.employees.name
+      employeeName.innerHTML = meetTheTeam.employees[i].name
       employeeDataDiv.appendChild(employeeName);
 
       let employeeJobDesc = document.createElement('H4')
-      employeeJobDesc.innerHTML = meetTheTeam.employees.job_description
+      employeeJobDesc.innerHTML = meetTheTeam.employees[i].job_description
       employeeDataDiv.appendChild(employeeJobDesc);
 
       let employeeText = document.createElement('P')
-      employeeText.innerHTML = meetTheTeam.employees.text
+      employeeText.innerHTML = meetTheTeam.employees[i].text
       employeeDataDiv.appendChild(employeeText);
 
       let employeeFunFact = document.createElement('h3')
-      employeeFunFact.innerHTML = meetTheTeam.employees.fun_fact
+      employeeFunFact.innerHTML = meetTheTeam.employees[i].fun_fact
       employeeDataDiv.appendChild(employeeFunFact);
+
+      if((i+1) % 2 == 0){
+        console.log(employeeDataDiv[0])
+        // employeeDataDiv[1].style.order = 0;
+        employeeDataDiv.style.textAlign = 'right'
+        employeeDataDiv.style.flexDirection = 'column-reverse'
+      }
       
       containtMainDiv.appendChild(employeeDiv);
 
