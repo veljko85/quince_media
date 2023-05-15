@@ -1,0 +1,24 @@
+{
+  "hero_image": "url('/images/hero/spartans.jpg')",
+  "title" : "Meet The Spartans!",
+  "sub_title": "you'll find crazy stuff here",
+  "content_heading_title": "THESE GUYS MAKE THE MAGIC HAPPEN!",
+  "content_heading_text": "We are down-to-earth team of guys that work hard to make the beautiful 3d stuff. Most importantly we do what we love. Not any of us has attended any special graphics design/animation school – we are self taught from ground up. Team made of electricians, mechanical technicians, IT engineers which makes our projects even more unique. No bs – just hard work!",
+  "content_main_title": "LET'S MEET THE GUYS!",
+  "employees": [
+    { 
+      "image": "url('/images/employees/sinisaSimonovic.jpg')", 
+      "name": "MR. SINISA SIMONOVIC",
+      "job_description": "LEAD 3D PRODUCT ANIMATOR",
+      "text": "Born as a very small baby he grow up in small town village – S. Varvarin. With affinities like playing PC games and video editing he definitely dreamed of job on PC. Known for his ability of mobile phone crushing. Not one of new phones he brought survived more than a month under his lead.",
+      "fun_fact": "Fun Fact: He owns his personal leprechaun who helps him with day-to-day tasks."    
+    },
+    { 
+      "image": "url('/images/employees/milanAntic.jpg')", 
+      "name": "MR. MILAN ANTIC",
+      "job_description": "SENIOR 3D ANIMATOR GENERALIST",
+      "text": "The proud grandson of his grandfather Prvoslav continues the tradition of long-stamina drinker. Champion of the city. He graduated as an electrician at high school in Krusevac. He never worked as one. Instead he took the ride trough 3d animation world as an good 3d generalist. Aside of that he is best DJ in Varvarin city.",
+      "fun_fact": "Fun Fact: He drinks Long Island to sober up."    
+    }
+  ]
+}
