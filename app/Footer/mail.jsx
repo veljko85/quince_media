@@ -1,10 +1,25 @@
 import styles from "./footer.module.css";
 
 export default function EmailPart() {
+  async function handleOnSubmit(e) {
+    e.preventDefault();
+
+    const formData = {};
+
+    Array.from(e.currentTarget.elements).forEach((field) => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
+
+    await fetch("/api/route", {
+      method: "POST",
+      body: JSON.stringify(formData),
+    });
+  }
   return (
     <>
       <h2 className={styles.title}>Contact us</h2>
-      <form action="" className={styles.form}>
+      <form onSubmit={handleOnSubmit} className={styles.form}>
         <div className={styles.input}>
           <label htmlFor="name">Your Name</label>
           <input type="text" id="name" />
@@ -26,7 +41,7 @@ export default function EmailPart() {
           ></textarea>
         </div>
 
-        <input type="submit" value="Submit" />
+        <button style={{ width: "50%", height: "10%" }}>Submit</button>
       </form>
     </>
   );
