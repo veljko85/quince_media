@@ -1,0 +1,203 @@
+.main {
+  background-color: rgb(218, 185, 20);
+  width: 100vw;
+  height: 400vh;
+}
+
+.space {
+  background-image: url("/images/space/space.jpg");
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spaceGradient {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spaceText {
+  font-size: 1.5rem;
+}
+
+.mainPart {
+  height: 200vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(156, 21, 21);
+}
+
+.contacts {
+  height: 20%;
+  width: 100%;
+  background-color: rgb(136, 31, 31);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsApp {
+  width: 70%;
+  height: 100%;
+  background-color: rgb(79, 79, 79);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsAppBox {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(106, 105, 105);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.whatsAppBtn {
+  height: 20%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(79, 79, 79);
+}
+
+.contactsSide {
+  width: 30%;
+  height: 100%;
+  background-color: rgb(125, 103, 103);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.contactSideContactType {
+  color: yellow;
+}
+
+.contactSideInformation {
+  color: antiquewhite;
+}
+
+.sendBox {
+  height: 80%;
+  width: 100%;
+  background-color: rgb(92, 90, 90);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send {
+  height: 100%;
+  width: 70%;
+  background-color: rgb(92, 90, 90);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sendSide {
+  height: 100%;
+  width: 30%;
+  background-color: rgb(99, 76, 76);
+}
+
+.sendTextTop {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(116, 114, 114);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.formPart {
+  width: 100%;
+  height: 80%;
+  background-color: rgb(71, 70, 70);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(66, 52, 52);
+  padding: 5%;
+}
+
+.sendTextBottom {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(116, 114, 114);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.reviews {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(151, 151, 151);
+}
+
+.reviewTitle {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.line {
+  background-color: yellow;
+  width: 15%;
+  height: 0.5%;
+  margin: 1%;
+}
+
+.imageBox {
+  height: 85%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.image {
+  height: 18%;
+  width: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
