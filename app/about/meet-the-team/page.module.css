@@ -34,7 +34,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
 }
 
 .contentHeading {
@@ -54,7 +53,7 @@
 
 .contentMain {
   width: 60vw;
-  margin-top: 50px;
+  padding: 50px 0;
   background-color: rgb(95, 68, 168);
 }
 
@@ -82,7 +81,31 @@
 }
 
 .employeeDataDiv {
-  margin-left: 1vw;
   width: 47vw;
   background-color: rgb(57, 209, 26);
+}
+
+.deviderDiv {
+  width: 20vw;
+  height: 8px;
+  background-color: yellow;
+  margin: auto;
+}
+
+.galeryContentDiv {
+  padding-top: 0.5vw;
+  width: 60vw;
+  background-color: rgb(53, 9, 248);
+}
+
+.galleryTitle {
+  color: white;
+}
+
+.galleryMainImg {
+  background-color: brown;
+  background-size: cover;
+  background-position: center;
+  width: 60vw;
+  height: 40vw;
 }
