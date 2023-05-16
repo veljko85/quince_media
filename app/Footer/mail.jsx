@@ -1,4 +1,5 @@
 import styles from "./footer.module.css";
+import Image from "next/image";
 
 export default function EmailPart() {
   async function handleOnSubmit(e) {
@@ -39,6 +40,61 @@ export default function EmailPart() {
             rows="10"
             style={{ width: "80%" }}
           ></textarea>
+        </div>
+        <div
+          style={{
+            width: "15rem",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "3rem",
+            fontSize: "small",
+          }}
+        >
+          <div
+            style={{
+              backgroundColor: "blue",
+              width: "80%",
+              height: "100%",
+              padding: "2%",
+            }}
+          >
+            <div>
+              protected by <strong>reCAPTCHA</strong>
+            </div>
+            <div>
+              <a
+                href="https://www.google.com/intl/en/policies/privacy/"
+                target="_blank"
+              >
+                Privacy
+              </a>
+              -
+              <a
+                href="https://www.google.com/intl/en/policies/terms/"
+                target="_blank"
+              >
+                Terms
+              </a>
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor: "whitesmoke",
+              width: "20%",
+              height: "100%",
+            }}
+          >
+            <Image
+              src="/images/socialIcons/recaptcha.svg"
+              width={30}
+              height={30}
+              alt="reCAPTCHA"
+            ></Image>
+          </div>
         </div>
 
         <button style={{ width: "50%", height: "10%" }}>Submit</button>

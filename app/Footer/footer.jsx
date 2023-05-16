@@ -80,7 +80,7 @@ export default function FooterB() {
             <Link href="/contactUs" className={styles.links}>
               <p>Contact Us</p>
             </Link>
-            <Link href="/" className={styles.links}>
+            <Link href="/privacyPolicy" className={styles.links}>
               <p>Privacy Policy</p>
             </Link>
           </div>
